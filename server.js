@@ -24,7 +24,7 @@ app.set('view engine', 'handlebars');
 
 // Data base mongoose
 if(process.env.NODE_ENV == 'production') {
-  mongoose.connect('');
+  mongoose.connect('mongodb://localhost/pubg-scraper');
 } else {
   mongoose.connect('mongodb://localhost/pubg-scraper');
 }
